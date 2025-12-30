@@ -16,3 +16,19 @@ def words2characters(words):
     """
     return []
 
+def words_to_characters(words):
+    """
+    Every element of "words" should be converted to a str, then split into
+    characters, each of which is separately appended to "characters." For 
+    example, if words==['hello', 1.234, True], then characters should be
+    ['h', 'e', 'l', 'l', 'o', '1', '.', '2', '3', '4', 'T', 'r', 'u', 'e']
+    """
+    characters = []
+
+    for word in words:
+        for ch in str(word):
+            characters.append(ch)
+
+    return characters
+
+
